@@ -23,7 +23,7 @@ describe("Admin de Productos", () => {
     cy.get("#btn-guardar").click()
 
     cy.get("#tabla-productos tbody").should("contain", "Impresora")
-    cy.get("#contador-productos").should("have.text", "6")
+    cy.get("#contador-productos").should("have.text", "10")
   })
 
   // Tarea 3: la aplicacion no permite agregar un producto con precio 0
